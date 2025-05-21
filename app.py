@@ -2,19 +2,7 @@ import joblib
 import streamlit as st
 import pandas as pd
 
-model = joblib.load('Daegu_Apartment_XGB_v2.pkl')
-
-st.markdown("""
-    <style>
-        .main {
-            background-color: #f0f2f6;
-        }
-        .block-container {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-    </style>
-""", unsafe_allow_html=True)
+model = joblib.load('Daegu_Apartment_XGB')
 
 st.image("WLA25-Daegu-LB-01-565x403.jpg", use_container_width=True)
 
