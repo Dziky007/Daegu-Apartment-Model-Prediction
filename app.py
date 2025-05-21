@@ -1,15 +1,16 @@
 
-import joblib
+import pickle
 import streamlit as st
 import pandas as pd
 
+model = pickle.load(open("Daegu_Apartment_XGB.sav", "rb"))
 
 st.image("WLA25-Daegu-LB-01-565x403.jpg", use_container_width=True)
 
 st.title("🧮Prediksi Harga Apartemen Daegu")
 
 st.subheader('Masukkan Detail Data Properti :')
-model = joblib.load('Daegu_Apartment_XGB.pkl')
+
 
 hallway = st.selectbox("Tipe Hallway", ['terraced', 'mixed', 'corridor'])
 time_to_subway = st.selectbox("Waktu ke Subway", ['0-5min', '5min-10min', '10min-15min', '15min-20min'])
