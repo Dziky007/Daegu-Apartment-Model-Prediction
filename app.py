@@ -2,7 +2,7 @@ import joblib
 import streamlit as st
 import pandas as pd
 
-model = joblib.load('Daegu_Apartment_XGB.pkl)
+model = joblib.load('Daegu_Apartment_XGB.pkl')
 
 st.markdown("""
     <style>
