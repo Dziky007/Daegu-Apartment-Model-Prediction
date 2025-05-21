@@ -3,7 +3,7 @@ import joblib
 import streamlit as st
 import pandas as pd
 
-model = joblib.load("Daegu_Apartment_XGB.pkl')
+model = joblib.load("Daegu_Apartment_XGB.pkl")
 
 st.image("WLA25-Daegu-LB-01-565x403.jpg", use_container_width=True)
 
