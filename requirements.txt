@@ -1,5 +1,6 @@
 streamlit
+pickle
 pandas
 scikit-learn
 xgboost
-joblib
+
