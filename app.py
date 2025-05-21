@@ -1,8 +1,8 @@
-import pickle
+import joblib
 import streamlit as st
 import pandas as pd
 
-model = pickle.load(open('Daegu_Apartment_XGB.sav','rb'))
+model = joblib.load('Daegu_Apartment_XGB.pkl)
 
 st.markdown("""
     <style>
